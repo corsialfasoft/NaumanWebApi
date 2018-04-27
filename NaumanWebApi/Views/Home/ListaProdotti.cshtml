@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Dettaglio Prodotto";
+}
+<div class="text-warning">
+    <p>@ViewBag.Message</p>
+</div>
+<h2>@ViewBag.Title</h2>
+
+@if(@ViewBag.Messaggio == null){
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-3">
+                Codice
+            </div>
+            <div class="col-md-3">
+                Descrizione
+            </div>
+            <div class="col-md-3">
+                Giacenza
+            </div>
+            <div class="col-md-3">
+                Dettagli
+            </div>
+        </div>
+        <hr />
+        @foreach(var p in @ViewBag.Prodotti){ 
+            <div class="row">
+                <div class="col-md-3">
+                    @p.Id
+                </div>
+                <div class="col-md-3">
+                    @p.Descrizione
+                </div>
+                <div class="col-md-3">
+                    @p.Giacenza
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-default" href="/Home/Detail/@p.Id">Dettagli</a>
+                </div>
+            </div>
+        }
+    </div>
+}

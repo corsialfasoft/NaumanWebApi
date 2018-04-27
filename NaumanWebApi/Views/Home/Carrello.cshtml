@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Carrello";
+}
+<div class="text-warning">
+    <h3>@ViewBag.Message</h3>
+</div>
+
+<h2>@ViewBag.Title</h2>
+@if(@ViewBag.Message == null){ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 h4">
+            ID
+        </div>
+        <div class="col-md-4 h4">
+            DESCRIZIONE
+        </div>
+        <div class="col-md-4 h5">
+            QUANTITA ORDINATA
+        </div>
+    </div>
+    <hr />
+    @foreach (var pro in @ViewBag.Prodotti) {
+        <div class="row">
+            <div class="col-md-4">
+                @pro.Id
+            </div>
+            <div class="col-md-4">
+                @pro.Descrizione
+            </div>
+            <div class="col-md-4">
+                @pro.QtaOrdine
+            </div>
+        </div>
+    }
+    <hr />
+    <div class="row">
+        <a class="btn btn-default" href="/Home/SpedisciOrdine">Spedisci</a>
+        <a  class="btn btn-default" href="/Home/Ricerca">Annulla</a>
+        <a  class="btn btn-default" href="/Home/PulisciCarrello">Pulisci</a>
+    </div>
+
+
+
+</div>
+}
+
+

@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Dettaglio Prodotto";
+}
+<div class="text-warning">
+    <p>@ViewBag.Message</p>
+</div>
+<h2>@ViewBag.Title</h2>
+
+@if(@ViewBag.Messaggio==null){
+    using(Html.BeginForm("AddToCar","Home",FormMethod.Post)) {
+        <div class=" container">
+            <div class="row">
+                <div class="col-md-5">
+                    Codice
+                </div>
+                <div class="col-md-5">
+                    @ViewBag.Prodotto.Id
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    Descrizione
+                </div>
+                <div class="col-md-5">
+                    @ViewBag.Prodotto.Descrizione
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    Giacenza
+                </div>
+                <div class="col-md-5">
+                    @ViewBag.Prodotto.Giacenza
+                </div>
+            </div><br />
+            <div class="row">
+                <div class="col-md-5">
+                    Quantità richiesta
+                </div>
+                <div class="col-md-5">
+                    <input type="number" name="qta" />
+                </div>
+            </div>
+            <div class="row">
+                <div style="text-align:right">
+                    <input type="hidden" name="id" value="@ViewBag.Prodotto.Id" />
+                    <input type="submit" value="Aggiungi" />
+                    <a class="btn btn-default" href="/Home/Ricerca">Annulla</a>
+                </div>
+            </div>
+        </div>
+    }
+}

@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NaumanWebApi;
 using NaumanWebApi.Controllers;
 
 namespace NaumanWebApi.Tests.Controllers {
@@ -9,10 +8,10 @@ namespace NaumanWebApi.Tests.Controllers {
         [TestMethod]
         public void Index() {
             // Disposizione
-            HomeController controller = new HomeController();
+            //HomeController controller = new HomeController();
 
             // Azione
-            ViewResult result = controller.Index() as ViewResult;
+          //  ViewResult result = controller.Index() as ViewResult;
 
             // Asserzione
             Assert.IsNotNull(result);
