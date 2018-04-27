@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaumanWebApi", "NaumanWebApi\NaumanWebApi.csproj", "{F7D8532D-8919-49BF-9204-023863EE7DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaumanWebApi.Tests", "NaumanWebApi.Tests\NaumanWebApi.Tests.csproj", "{35392FC4-D4B8-4B4F-911D-85DE05A71D2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7D8532D-8919-49BF-9204-023863EE7DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D8532D-8919-49BF-9204-023863EE7DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D8532D-8919-49BF-9204-023863EE7DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D8532D-8919-49BF-9204-023863EE7DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35392FC4-D4B8-4B4F-911D-85DE05A71D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35392FC4-D4B8-4B4F-911D-85DE05A71D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35392FC4-D4B8-4B4F-911D-85DE05A71D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35392FC4-D4B8-4B4F-911D-85DE05A71D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77F8DC5C-0813-4338-A238-F0A26FC019F3}
+	EndGlobalSection
+EndGlobal
